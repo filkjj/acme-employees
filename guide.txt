@@ -1,0 +1,14 @@
+db/index
+sequlize model
+
+src/index
+react bullshit
+
+index.html
+base html page
+
+routes/router
+router pipeline for app
+
+server.js
+app startup 

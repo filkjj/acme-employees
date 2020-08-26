@@ -1,0 +1,9 @@
+
+.mainDiv{
+    display: flex;
+    
+}
+.childDiv{
+    display: flex;
+    flex-direction: column;
+}
