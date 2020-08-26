@@ -7,7 +7,7 @@ const router = require('express').Router();
 
 
 //will have to fix this when put onto the horoku
-router.get('/', (req, res, next)=> res.sendFile('../index.html'));
+router.get('/', (req, res, next)=> res.send('../index.html'));
 //||`D:\\fullStackOnWindows\\acme-employees\\index.html`)
 
 router.get('/api/employees', async (req,res,next)=>{
