@@ -13,6 +13,8 @@ router.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, '..', 'index.html'))
   })
 
+router.use('/dist', path.join(__dirname, '..', 'dist','main.js'));
+
 router.get('/api/employees', async (req,res,next)=>{
     try{
         const data = await Employees.findAll();
