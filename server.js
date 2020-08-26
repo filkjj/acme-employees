@@ -2,10 +2,9 @@ const path = require('path');
 const {router} = require('./routes/router');
 const express = require('express');
 const app = express();
+const morgan = require('morgan')
 app.use(require('body-parser').json());
-app.use(express.urlencoded({extended: true}))
-
-
+app.use(morgan);
 
 app.use('/', router);
 

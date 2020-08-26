@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run seed & node server.js",
-    "seed" : "node seedDB.js",
+    "seed": "node seedDB.js",
     "build": "webpack",
     "build:dev": "npm run build -- --watch --mode development",
     "start:dev": "nodemon server --ignore dist/ --ignore src/ & npm run build:dev"
@@ -16,6 +16,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "faker": "^4.1.0",
+    "morgan": "^1.10.0",
     "pg": "^8.3.2",
     "sequelize": "^6.3.4"
   },
