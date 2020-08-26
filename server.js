@@ -5,6 +5,8 @@ const app = express();
 app.use(require('body-parser').json());
 app.use(express.urlencoded({extended: true}))
 
+app.use('/dist', path.join(__dirname, '..', 'dist'));
+
 app.use('/', router);
 
 app.use((err, req, res, next)=> {
