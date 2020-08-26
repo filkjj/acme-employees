@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 // add horoku db in below
-const db = new Sequelize(PROCESS.ENV.DATABASE || 'postgres://localhost/acme_employees');
+const db = new Sequelize(PROCESS.ENV.DATABASE_URL || 'postgres://localhost/acme_employees');
 
 
 const Employees = db.define('employees', {
