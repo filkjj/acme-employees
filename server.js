@@ -4,8 +4,7 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan')
 app.use(require('body-parser').json());
-app.use(morgan);
-
+//app.use(morgan('dev'));
 
 app.use('/', router);
 
